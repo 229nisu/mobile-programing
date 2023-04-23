@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.myapplication3.MainActivity" />
+
+
+    </data>
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".secActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:text="Welcome user"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="331dp"
+        android:layout_height="102dp"
+        android:hint="Enter the your Name"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="331dp"
+        android:layout_height="106dp"
+
+        android:hint="Enter the your password"
+        />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{viewmodel.Btntext}"
+
+        />
+
+
+</LinearLayout>
+
+</layout>
+
+
+
+
+
+
+
